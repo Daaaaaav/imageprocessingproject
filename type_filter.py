@@ -5,4 +5,4 @@ def cyano_filter(image, filter_type):
     np_img = np.array(image)
     filtered_img = np.dot(np_img[..., :3], cyanotype_filter.T)
     filtered_img = np.clip(filtered_img, 0, 255)
-    return Image.fromarray(filtered_img.astype('uint8')) 
+    return Image.fromarray(filtered_img.astype('uint8'))  
