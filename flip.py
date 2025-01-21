@@ -7,3 +7,5 @@ def flip(image, direction):
         return image.transpose(Image.FLIP_TOP_BOTTOM)
     else:
         return image.transpose(Image.ROTATE_180)
+
+
