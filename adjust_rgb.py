@@ -9,3 +9,4 @@ def adjust_rgb(image, red_factor=1.0, green_factor=1.0, blue_factor=1.0):
     b = np.clip(b * blue_factor, 0, 255)
     adjusted_img = np.stack([r, g, b], axis=-1)
     return Image.fromarray(adjusted_img.astype('uint8'))
+
