@@ -9,4 +9,4 @@ def template_matching(image, template_image):
     h, w = template.shape
     bottom_right = (top_left[0] + w, top_left[1] + h)
     cv2.rectangle(gray, top_left, bottom_right, 255, 2)
-    return Image.fromarray(gray)  
+    return Image.fromarray(gray)    
