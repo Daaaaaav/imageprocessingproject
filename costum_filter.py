@@ -4,3 +4,4 @@ def custom_filter(image, kernel):
     filtered_img = cv2.filter2D(np_img, -1, kernel)
     return Image.fromarray(filtered_img)
    
+ 
