@@ -4,3 +4,4 @@ def overlay_images(base_image, overlay_image, position, transparency):
     overlay_image = overlay_image.resize(base_image.size)
     blended = Image.blend(base_image, overlay_image, transparency)
     return blended
+      
