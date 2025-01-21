@@ -12,3 +12,4 @@ def skeletonization(image):
         if cv2.countNonZero(binary) == 0:
             break
     return Image.fromarray(skeleton)
+ 
